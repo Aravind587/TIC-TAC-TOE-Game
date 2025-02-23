@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="game-icon.png">
+</head>
+<body>
+    <div class="container" id="gameContainer">
+        <div class="header">
+            <div id="playerX" class="left active">Player X</div>
+            <div class="name">TIC - TAC - TOE</div>
+            <div id="playerO" class="right">Player O</div>
+        </div>
+        
+        <div class="board" id="board">
+            <div class="row"> 
+                <div class="cell" onclick="handleClick(0,0)"></div>
+                <div class="cell" onclick="handleClick(0,1)"></div>
+                <div class="cell" onclick="handleClick(0,2)"></div>
+            </div>
+            <div class="row"> 
+                <div class="cell" onclick="handleClick(1,0)"></div>
+                <div class="cell" onclick="handleClick(1,1)"></div>
+                <div class="cell" onclick="handleClick(1,2)"></div>
+            </div>
+            <div class="row"> 
+                <div class="cell" onclick="handleClick(2,0)"></div>
+                <div class="cell" onclick="handleClick(2,1)"></div>
+                <div class="cell" onclick="handleClick(2,2)"></div>
+            </div>
+        </div>
+
+        <button class="new-game" onclick="resetBoard()">New Game</button>
+    </div>
+
+    <div class="popup" id="resultPopup">
+        <div class="popup-content">
+            <p id="resultMessage"></p>
+            <button class="new-game" onclick="closePopup()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>

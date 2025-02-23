@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #191515;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: filter 0.3s ease-in-out;
+}
+
+.blurred {
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.left, .name, .right {
+    box-shadow: 2px 2px 5px 5px #888888;
+    border-radius: 8px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.active {
+    border: 3px solid yellow;
+    padding: 10px;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    border: 5px solid rgb(213, 203, 203);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.cell:hover {
+    background-color: lightblue;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.popup-content {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.new-game {
+    font-weight: 600;
+    border-radius: 8px;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-game:hover {
+    background-color: blueviolet;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .header {
+        width: 90%;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .left, .name, .right {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .board {
+        font-size: 20px;
+    }
+
+    .cell {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        border: 3px solid rgb(213, 203, 203);
+    }
+
+    .popup {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .popup-content {
+        font-size: 18px;
+    }
+
+    .new-game {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        width: 95%;
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .left, .name, .right {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    .cell {
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+        border: 2px solid rgb(213, 203, 203);
+    }
+
+    .popup {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .popup-content {
+        font-size: 16px;
+    }
+
+    .new-game {
+        width: 120px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
