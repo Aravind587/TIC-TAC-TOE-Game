@@ -112,7 +112,7 @@ body {
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .header {
         width: 90%;
         font-size: 20px;
