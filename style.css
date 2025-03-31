@@ -220,11 +220,11 @@ body {
     }
 
     .new-game {
-        margin-top:80px;
+        margin-top:50px;
         width: 200px;
         height: 50px;
         font-size: 17px;
-        font-width:bold;
+        font-width:bolder;
     }
 }
 
