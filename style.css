@@ -112,7 +112,7 @@ body {
 }
 
 /* RESPONSIVE DESIGN */
-@media (min-width: 768px) {
+@media (max-width: 1060px) {
     .header {
         width: 90%;
         font-size: 20px;
@@ -147,7 +147,7 @@ body {
     }
 
     .new-game {
-        
+        margin-top:50px;
         width: 200px;
         height: 50px;
         font-size: 18px;
@@ -189,7 +189,7 @@ body {
     }
 
     .new-game {
-        margin:70px;
+        margin-top:70px;
         width: 200px;
         height: 50px;
         font-size: 17px;
@@ -231,3 +231,40 @@ body {
         font-size: 16px;
     }
 }
+
+@media (max-width: 786px) {
+    .header {
+        width: 95%;
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .left, .name, .right {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    .cell {
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+        border: 2px solid rgb(213, 203, 203);
+    }
+
+    .popup {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .popup-content {
+        font-size: 16px;
+    }
+
+    .new-game {
+        margin-top:30px;
+        width: 120px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
